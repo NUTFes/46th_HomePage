@@ -1,0 +1,12 @@
+.claude/settings.local.json
+
+# docs のうち local-only / redact のタグがある資料（docs/TAGS.md 参照。scripts/check-docs-tags.sh で検査）
+docs/Homepage2026引き継ぎ資料.md
+docs/2026-10-08_HomePage_MT.md
+docs/45th HP のアンケートヒアリング まとめ.md
+docs/45th_新執行部ヒアリング資料.md
+docs/アンケート草稿.md
+docs/局別アンケート草稿.md
+docs/ヒアリング見直し_MT資料.md
+docs/デザインのためのヒアリング.md
+docs/デザインのためのヒアリング_正本.md
