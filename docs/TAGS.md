@@ -39,6 +39,27 @@
 - `publish` の資料は `.gitignore` に入れない。
 - `redact` の資料を伏せ終えたら、A のタグを外して `publish` に変える。
 
+## 2つのリポジトリの運用
+
+同じ作業フォルダを、2つの git で使い分ける。
+
+| | 公開側 | 非公開側 |
+|---|---|---|
+| git ディレクトリ | `.git` | `.git-private`（公開側の `.gitignore` で除外） |
+| remote | `NUTFes/46th_HomePage` | `naoto-anzai/46th_HomePage-private`（個人・private） |
+| 追跡するもの | `publish` の資料と、コード・設定 | `local-only` と `redact` の資料 |
+| 操作 | `git ...` | `scripts/pgit ...`（`git` と同じ使い方） |
+
+手順:
+
+1. 資料のタグを変えたら、`scripts/sync-private.sh` で非公開側の追跡対象をタグに合わせる。
+2. 公開側の `.gitignore` の除外リストも、タグに合わせて直す。
+3. `scripts/check-docs-tags.sh` で、タグと両側の追跡対象が一致していることを確認する。
+4. 資料の変更は `scripts/pgit add` / `commit` / `push`、それ以外は `git` を使う。
+5. `redact` の資料を伏せ終えて `publish` に変えるときは、非公開側から外し（`sync-private.sh`）、公開側に追加する。
+
+内部メンバーへの共有は、非公開側の資料を Notion に書き出して行う。
+
 ## 資料の一覧（仮タグ。2026-10-17 時点）
 
 | 資料 | タグ | 理由 |

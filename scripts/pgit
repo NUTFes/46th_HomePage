@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# 非公開リポジトリ（.git-private）用の git。使い方は git と同じ。例: scripts/pgit status
+# 非公開側は local-only / redact の資料だけを追跡する。追跡対象は scripts/sync-private.sh がタグから決める。
+set -eu
+root=$(git rev-parse --show-toplevel)
+exec git --git-dir="$root/.git-private" --work-tree="$root" "$@"
