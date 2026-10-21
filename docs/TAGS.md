@@ -73,3 +73,4 @@
 | `ヒアリング見直し_MT資料.md` | org-internal, meeting, draft, reference, redact | 執行部ヒアリングの進め方の内部検討。付録に書籍の要点（言い換え）を含む |
 | `デザインのためのヒアリング.md` | copyrighted, reference, local-only | 書籍本文のほぼそのままの抜粋 |
 | `デザインのためのヒアリング_正本.md` | copyrighted, reference, local-only | 書籍48ページ分の書き起こし |
+| `HomePagePJ_紹介.pptx` | unreviewed, local-only | 執行部向けの紹介スライド。内容は未確認。frontmatter を付けられないので、タグはこの表から読む |

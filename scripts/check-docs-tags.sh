@@ -19,7 +19,7 @@ while IFS= read -r -d '' file; do
 
   tags=$(doc_tags "$file")
   if [[ -z "$tags" ]]; then
-    fail "$name" "frontmatter に tags がない"
+    fail "$name" "tags がない（.md は frontmatter、それ以外は docs/TAGS.md の表に書く）"
     continue
   fi
 
