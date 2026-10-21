@@ -1,5 +1,8 @@
 .claude/settings.local.json
 
+# 非公開リポジトリ（naoto-anzai/46th_HomePage-private）の git ディレクトリ
+.git-private/
+
 # docs のうち local-only / redact のタグがある資料（docs/TAGS.md 参照。scripts/check-docs-tags.sh で検査）
 docs/Homepage2026引き継ぎ資料.md
 docs/2026-10-08_HomePage_MT.md
