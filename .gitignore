@@ -14,3 +14,6 @@ docs/ヒアリング見直し_MT資料.md
 docs/デザインのためのヒアリング.md
 docs/デザインのためのヒアリング_正本.md
 docs/HomePagePJ_紹介.pptx
+
+# アンケートの回答結果（回答の原文を含む。local-only。check-docs-tags.sh は docs 直下しか見ないので、フォルダごと除外）
+docs/アンケート結果/
